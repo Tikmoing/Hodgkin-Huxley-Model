@@ -21,7 +21,7 @@ function [v,I,t,m,n,h] = HodgkinHuxleyModel(tSTIM_START,tSTIM_DUR,STIM_STRENGTH,
 
 ```
 
-selet含义：
+selet用来选择是否绘制图形以及绘制的图形中是否要加入电流图形，如下：
 
 ```matlab
 % plot the results
@@ -40,12 +40,13 @@ axis([t(1) t(end) -10 100]);
 ```matlab
 HodgkinHuxleyModel(0,20,10,20,1)
 ```
-结果为：<br>
+结果为：<br><br>
 ![1](https://raw.githubusercontent.com/Tikmoing/Hodgkin-Huxley-Model/main/png/1.png)
 
 
-
-文件getOmega.mz中寻找极大值点的方法是判断电压大于某个数且满足极值点条件，否则在平稳的因为数值的不稳定性会产生满足极值点条件的点，而这些点是不能算进去的。
+<br>
+## getOmega.m:长刺激下应激频率
+文件getOmega.m中寻找极大值点的方法是判断电压大于某个数且满足极值点条件，否则在平稳的因为数值的不稳定性会产生满足极值点条件的点，而这些点是不能算进去的。
 
 ```matlab
 function res = findMaxiumV(v)
