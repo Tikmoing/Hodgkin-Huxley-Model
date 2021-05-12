@@ -4,7 +4,7 @@
 
 ## HodgkinHuxleyModel.m: 解微分方程
 
-​		文件中的HHvi.m为一个求解该微分方程封装好的函数。对于不同的输入时间，强度等进行求解。具体参数如下：
+​		文件中的HodgkinHuxleyModel.m为一个求解该微分方程封装好的函数。对于不同的输入时间，强度等进行求解。具体参数如下：
 
 ```matlab
 function [v,I,t,m,n,h] = HodgkinHuxleyModel(tSTIM_START,tSTIM_DUR,STIM_STRENGTH,endTime,selet)
@@ -45,7 +45,7 @@ HodgkinHuxleyModel(0,20,10,20,1)
 
 
 
-## 找寻极大值点
+文件getOmega.mz中寻找极大值点的方法是判断电压大于某个数且满足极值点条件，否则在平稳的因为数值的不稳定性会产生满足极值点条件的点，而这些点是不能算进去的。
 
 ```matlab
 function res = findMaxiumV(v)
