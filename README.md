@@ -36,6 +36,11 @@ else % 画出电势和电流的图形
 end
 axis([t(1) t(end) -10 100]);
 ```
+如：
+```matlab
+HodgkinHuxleyModel(0,20,10,20,1)
+```
+结果为：
 
 
 
