@@ -41,6 +41,7 @@ axis([t(1) t(end) -10 100]);
 HodgkinHuxleyModel(0,20,10,20,1)
 ```
 结果为：
+![https://raw.githubusercontent.com/Tikmoing/Hodgkin-Huxley-Model/main/png/1.png]
 
 
 
