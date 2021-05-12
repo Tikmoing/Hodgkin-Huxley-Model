@@ -40,7 +40,7 @@ axis([t(1) t(end) -10 100]);
 ```matlab
 HodgkinHuxleyModel(0,20,10,20,1)
 ```
-结果为：\\
+结果为：<br>
 ![1](https://raw.githubusercontent.com/Tikmoing/Hodgkin-Huxley-Model/main/png/1.png)
 
 
