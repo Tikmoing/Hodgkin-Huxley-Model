@@ -1,4 +1,4 @@
-function [v,I,t,m,n,h] = HHvi(tSTIM_START,tSTIM_DUR,STIM_STRENGTH,endTime,selet)
+function [v,I,t,m,n,h] = HodgkinHuxleyModel(tSTIM_START,tSTIM_DUR,STIM_STRENGTH,endTime,selet)
 %% Constant
 % Nernst Potentials
 Ena = 115; Ek = -12; El = 10.6;
