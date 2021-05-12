@@ -89,7 +89,7 @@ else
     subplot(1,2,1),plot(t,v);
     subplot(1,2,2),plot(t,I);
 end
-axis([t(1) t(end) -80 60]);
+axis([t(1) t(end) -30 120]);
 
 
 end
