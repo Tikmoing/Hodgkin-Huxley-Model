@@ -7,7 +7,7 @@
 ​		文件中的HHvi.m为一个求解该微分方程封装好的函数。对于不同的输入时间，强度等进行求解。具体参数如下：
 
 ```matlab
-function [v,I,t,m,n,h] = HHvi(tSTIM_START,tSTIM_DUR,STIM_STRENGTH,endTime,selet)
+function [v,I,t,m,n,h] = HodgkinHuxleyModel(tSTIM_START,tSTIM_DUR,STIM_STRENGTH,endTime,selet)
 %v : t时间内的电势差
 %I : t时间内的电流
 %t ： 时间
@@ -21,7 +21,7 @@ function [v,I,t,m,n,h] = HHvi(tSTIM_START,tSTIM_DUR,STIM_STRENGTH,endTime,selet)
 
 ```
 
-select操作：
+selet含义：
 
 ```matlab
 % plot the results
