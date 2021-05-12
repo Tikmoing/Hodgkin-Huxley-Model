@@ -44,8 +44,8 @@ HodgkinHuxleyModel(0,20,10,20,1)
 ![1](https://raw.githubusercontent.com/Tikmoing/Hodgkin-Huxley-Model/main/png/1.png)
 
 
-<br>
-##getOmega.m:长刺激下应激频率
+
+## getOmega.m:长刺激下应激频率
 
 文件getOmega.m中寻找极大值点的方法是判断电压大于某个数且满足极值点条件，否则在平稳的因为数值的不稳定性会产生满足极值点条件的点，而这些点是不能算进去的。
 
